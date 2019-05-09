@@ -1,0 +1,8 @@
+<launch>
+
+    <include file="$(find prizm_ros)/launch/twist_controller.launch" />
+    <!--<include file="$(find birds_eye)/launch/birds_eye.launch" />-->
+
+    <!-- launch the node -->
+    <node name="grid_follow" pkg="grid_follow" type="grid_follow" respawn="true" respawn_delay="10" output="screen" />
+</launch>
